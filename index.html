@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Great Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        The Great Guessing Game
+        <br />
+        <span id="colorDisplay">rgb(0, 0, 0)</span>
+      </h1>
+    </header>
+
+    <nav class="toolbar" aria-label="Controles del juego">
+      <div class="toolbar-content">
+        <button id="reset" type="button">Nuevos colores</button>
+        <span id="message" aria-live="polite"></span>
+        <div class="mode-buttons" aria-label="Dificultad">
+          <button class="mode" data-count="3" type="button">Fácil</button>
+          <button class="mode selected" data-count="6" type="button">Difícil</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="container" aria-label="Colores para elegir">
+        <button class="square" type="button" aria-label="Elegir color 1"></button>
+        <button class="square" type="button" aria-label="Elegir color 2"></button>
+        <button class="square" type="button" aria-label="Elegir color 3"></button>
+        <button class="square" type="button" aria-label="Elegir color 4"></button>
+        <button class="square" type="button" aria-label="Elegir color 5"></button>
+        <button class="square" type="button" aria-label="Elegir color 6"></button>
+      </section>
+    </main>
+  </body>
+</html>
